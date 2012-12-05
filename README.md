@@ -32,7 +32,6 @@ Or install it yourself as:
 * Implement all methods in Spree API: http://api.spreecommerce.com/v1/
   * Payments
   * Shipments
-  * Taxons
 
 * More tests
 * Mock web requests in tests
