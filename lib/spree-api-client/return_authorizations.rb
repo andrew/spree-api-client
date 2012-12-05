@@ -18,11 +18,11 @@ module Spree
           post("orders/#{order_id}/return_authorizations/", options)
         end
 
-        def update_return_authorization(permalink_or_id, return_authorization_id, options={})
+        def update_return_authorization(product_id, return_authorization_id, options={})
           put("orders/#{order_id}/return_authorizations/#{return_authorization_id}", options)
         end
 
-        def delete_return_authorization(permalink_or_id, return_authorization_id, options={})
+        def delete_return_authorization(product_id, return_authorization_id, options={})
           delete("orders/#{order_id}/return_authorizations/#{return_authorization_id}", options)
         end
       end

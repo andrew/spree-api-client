@@ -18,11 +18,11 @@ module Spree
           post("products/#{product_id}/product_properties/", options)
         end
 
-        def update_property(permalink_or_id, property_id, options={})
+        def update_property(product_id, property_id, options={})
           put("products/#{product_id}/product_properties/#{property_id}", options)
         end
 
-        def delete_property(permalink_or_id, property_id, options={})
+        def delete_property(product_id, property_id, options={})
           delete("products/#{product_id}/product_properties/#{property_id}", options)
         end
       end
