@@ -22,19 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-  client = Spree::API::Client.new('http://example/api', 'yourapitokenstring')
-  products = client.products
+    client = Spree::API::Client.new('http://example/api', 'yourapitokenstring')
+    products = client.products
 
 ## TODO
 
 * Implement all methods in Spree API: http://api.spreecommerce.com/v1/
   * Orders
+    * Line Items
+    * Payments
+    * Shipments
+    * Return Authorizations
   * Taxonomies
+    * Taxons
   * Addresses
   * Countries
   * Zones
+
 * More tests
+* Mock web requests in tests
 * Error handling
+* Autopagination
 
 ## Contributing
 
