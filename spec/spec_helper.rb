@@ -1,0 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'spree-api-client'
+require 'rspec'
+# require 'webmock/rspec'
