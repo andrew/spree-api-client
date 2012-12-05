@@ -11,6 +11,7 @@ require 'spree-api-client/taxonomies'
 require 'spree-api-client/addresses'
 require 'spree-api-client/countries'
 require 'spree-api-client/zones'
+require 'spree-api-client/properties'
 
 module Spree
   module API
@@ -25,6 +26,7 @@ module Spree
       include Spree::API::Client::Addresses
       include Spree::API::Client::Countries
       include Spree::API::Client::Zones
+      include Spree::API::Client::Properties
 
       attr_accessor :api_endpoint, :api_token, :per_page
       def initialize(api_endpoint, api_token, options={})
