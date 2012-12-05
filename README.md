@@ -1,5 +1,7 @@
 # Spree::API::Client
 
+[![Build Status](https://secure.travis-ci.org/andrew/spree-api-client.png)](https://travis-ci.org/andrew/spree-api-client)
+
 ** Beware: very alpha and untested **
 
 A rubygem for interacting with the Spree API: http://api.spreecommerce.com/v1/
@@ -28,16 +30,12 @@ Or install it yourself as:
 ## TODO
 
 * Implement all methods in Spree API: http://api.spreecommerce.com/v1/
-  * Orders
-    * Line Items
-    * Payments
-    * Shipments
-    * Return Authorizations
-  * Taxonomies
-    * Taxons
-  * Addresses
-  * Countries
-  * Zones
+  * Properties
+  * Line Items
+  * Payments
+  * Shipments
+  * Return Authorizations
+  * Taxons
 
 * More tests
 * Mock web requests in tests
