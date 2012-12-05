@@ -10,19 +10,19 @@ module Spree
           get("products/#{permalink_or_id}", options)
         end
         
-        def new(options={})
+        def new_product(options={})
           get("products/#{permalink_or_id}/new", options)
         end
         
-        def create(options={})
+        def create_product(options={})
           post("products", options)
         end
         
-        def update(permalink_or_id, options={})
+        def update_product(permalink_or_id, options={})
           put("products/#{permalink_or_id}", options)
         end
         
-        def delete(permalink_or_id, options={})
+        def delete_product(permalink_or_id, options={})
           delete("products/#{permalink_or_id}", options)
         end
       end
