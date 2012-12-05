@@ -7,6 +7,7 @@ require 'spree-api-client/request'
 require 'spree-api-client/products'
 require 'spree-api-client/variants'
 require 'spree-api-client/orders'
+require 'spree-api-client/taxonomies'
 
 module Spree
   module API
@@ -17,6 +18,7 @@ module Spree
       include Spree::API::Client::Products
       include Spree::API::Client::Variants
       include Spree::API::Client::Orders
+      include Spree::API::Client::Taxonomies
 
       attr_accessor :api_endpoint, :api_token, :per_page
       def initialize(api_endpoint, api_token, options={})
