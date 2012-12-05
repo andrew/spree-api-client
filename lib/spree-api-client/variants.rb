@@ -18,11 +18,11 @@ module Spree
           post("products/#{product_id}/variants/", options)
         end
 
-        def update_variant(permalink_or_id, variant_id, options={})
+        def update_variant(product_id, variant_id, options={})
           put("products/#{product_id}/variants/#{variant_id}", options)
         end
 
-        def delete_variant(permalink_or_id, variant_id, options={})
+        def delete_variant(product_id, variant_id, options={})
           delete("products/#{product_id}/variants/#{variant_id}", options)
         end
       end
