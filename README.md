@@ -30,10 +30,8 @@ Or install it yourself as:
 ## TODO
 
 * Implement all methods in Spree API: http://api.spreecommerce.com/v1/
-  * Line Items
   * Payments
   * Shipments
-  * Return Authorizations
   * Taxons
 
 * More tests
