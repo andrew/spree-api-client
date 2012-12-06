@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Spree::API::Client::VERSION
   gem.authors       = ["Andrew Nesbitt"]
   gem.email         = ["andrewnez@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A rubygem for interacting with the Spree API}
+  gem.summary       = %q{A rubygem for interacting with the Spree API}
+  gem.homepage      = "https://github.com/andrew/spree-api-client"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
