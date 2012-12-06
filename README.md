@@ -29,7 +29,6 @@ Or install it yourself as:
 
 ## TODO
 
-* Shipments
 * More tests
 * Mock web requests in tests
 * documentation

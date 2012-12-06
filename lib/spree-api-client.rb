@@ -16,6 +16,7 @@ require 'spree-api-client/line_items'
 require 'spree-api-client/return_authorizations'
 require 'spree-api-client/taxons'
 require 'spree-api-client/payments'
+require 'spree-api-client/shipments'
 
 module Spree
   module API
@@ -35,6 +36,7 @@ module Spree
       include Spree::API::Client::ReturnAuthorizations
       include Spree::API::Client::Taxons
       include Spree::API::Client::Payments
+      include Spree::API::Client::Shipments
 
       attr_accessor :api_endpoint, :api_token, :per_page
       def initialize(api_endpoint, api_token, options={})
