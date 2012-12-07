@@ -22,6 +22,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'hashie', '~> 1.2'
   gem.add_dependency 'multi_json', '~> 1.3'
 
+  gem.add_development_dependency 'webmock'
+  gem.add_development_dependency 'vcr'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
 end

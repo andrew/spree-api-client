@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/store/api/taxonomies/1/taxons?per_page=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      X-Spree-Token:
+      - b56019f04b61a50553ee323f5ab68c6b435871971e79c987
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      Content-Type:
+      - application/json
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"d751713988987e9331980363e24189ce"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 92ea82cb431abd35b20ab737cd348ecd
+      X-Runtime:
+      - '0.033542'
+      Content-Length:
+      - '2'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
+      Date:
+      - Fri, 07 Dec 2012 17:37:16 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '[]'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2012 17:37:16 GMT
+recorded_with: VCR 2.3.0

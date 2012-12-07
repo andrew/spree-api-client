@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/store/api/orders/R781501551/return_authorizations?per_page=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      X-Spree-Token:
+      - b56019f04b61a50553ee323f5ab68c6b435871971e79c987
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      Content-Type:
+      - application/json
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"6f071d405cceb3add2aa1ce45451ae0c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f0c2d041caa9e182c835e7dd10c1d87a
+      X-Runtime:
+      - '0.074531'
+      Content-Length:
+      - '256'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
+      Date:
+      - Fri, 07 Dec 2012 17:37:15 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"current_page":1,"pages":1,"return_authorizations":[{"return_authorization":{"id":1,"number":"RMA848788441","state":"authorized","amount":"0.0","order_id":80,"reason":"","created_at":"2012-12-06T11:49:07Z","updated_at":"2012-12-06T11:49:07Z"}}]}'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2012 17:37:15 GMT
+recorded_with: VCR 2.3.0

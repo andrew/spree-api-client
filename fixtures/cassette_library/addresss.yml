@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/store/api/addresses/1?per_page=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      X-Spree-Token:
+      - b56019f04b61a50553ee323f5ab68c6b435871971e79c987
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: ! 'Not Found '
+    headers:
+      Content-Type:
+      - application/json
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c5a870720c555607f82883005f015e7c
+      X-Runtime:
+      - '5.794934'
+      Content-Length:
+      - '67'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
+      Date:
+      - Fri, 07 Dec 2012 17:34:22 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":"translation missing: en-GB.spree.api.resource_not_found"}'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2012 17:34:22 GMT
+recorded_with: VCR 2.3.0

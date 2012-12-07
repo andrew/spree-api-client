@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/store/api/products/1/variants?per_page=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      X-Spree-Token:
+      - b56019f04b61a50553ee323f5ab68c6b435871971e79c987
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      Content-Type:
+      - application/json
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"7ebbeb3d86e3857a26aead46fd50dc24"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3ea623d6001a50456a17647ca427e6f5
+      X-Runtime:
+      - '0.100396'
+      Content-Length:
+      - '9097'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
+      Date:
+      - Fri, 07 Dec 2012 17:37:16 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":30,"total_count":30,"current_page":1,"pages":1,"variants":[{"variant":{"id":1,"name":"Bomb","count_on_hand":0,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":true,"cost_price":"12.99","permalink":"bomb","option_values":[]}},{"variant":{"id":2,"name":"Bomb","count_on_hand":8,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"bomb","option_values":[{"option_value":{"id":1,"name":"Small","presentation":"Small","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":3,"name":"Bomb","count_on_hand":20,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"bomb","option_values":[{"option_value":{"id":2,"name":"Medium","presentation":"Medium","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":4,"name":"Bomb","count_on_hand":14,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"bomb","option_values":[{"option_value":{"id":3,"name":"Large","presentation":"Large","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":5,"name":"Disobey","count_on_hand":0,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":true,"cost_price":"12.99","permalink":"disobey","option_values":[]}},{"variant":{"id":6,"name":"Disobey","count_on_hand":10,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"disobey","option_values":[{"option_value":{"id":1,"name":"Small","presentation":"Small","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":7,"name":"Disobey","count_on_hand":19,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"disobey","option_values":[{"option_value":{"id":2,"name":"Medium","presentation":"Medium","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":8,"name":"Disobey","count_on_hand":15,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"disobey","option_values":[{"option_value":{"id":3,"name":"Large","presentation":"Large","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":9,"name":"POV","count_on_hand":0,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":true,"cost_price":"12.99","permalink":"pov","option_values":[]}},{"variant":{"id":10,"name":"POV","count_on_hand":10,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"pov","option_values":[{"option_value":{"id":1,"name":"Small","presentation":"Small","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":11,"name":"POV","count_on_hand":19,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"pov","option_values":[{"option_value":{"id":2,"name":"Medium","presentation":"Medium","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":12,"name":"POV","count_on_hand":15,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"pov","option_values":[{"option_value":{"id":3,"name":"Large","presentation":"Large","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":13,"name":"Bomb","count_on_hand":5,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":"12.99","permalink":"bomb","option_values":[{"option_value":{"id":4,"name":"XL","presentation":"XL","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":14,"name":"Disobey","count_on_hand":5,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"disobey","option_values":[{"option_value":{"id":4,"name":"XL","presentation":"XL","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":15,"name":"POV","count_on_hand":5,"sku":"","price":"12.99","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"pov","option_values":[{"option_value":{"id":4,"name":"XL","presentation":"XL","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":16,"name":"Whitelines
+        1","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":true,"cost_price":null,"permalink":"whitelines-1","option_values":[]}},{"variant":{"id":17,"name":"Whitelines
+        1","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-1","option_values":[{"option_value":{"id":1,"name":"Small","presentation":"Small","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":18,"name":"Whitelines
+        1","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-1","option_values":[{"option_value":{"id":2,"name":"Medium","presentation":"Medium","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":19,"name":"Whitelines
+        1","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-1","option_values":[{"option_value":{"id":3,"name":"Large","presentation":"Large","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":20,"name":"Whitelines
+        1","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-1","option_values":[{"option_value":{"id":4,"name":"XL","presentation":"XL","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":21,"name":"Whitelines
+        2","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":true,"cost_price":null,"permalink":"whitelines-2","option_values":[]}},{"variant":{"id":22,"name":"Whitelines
+        3","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":true,"cost_price":null,"permalink":"whitelines-3","option_values":[]}},{"variant":{"id":23,"name":"Whitelines
+        2","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-2","option_values":[{"option_value":{"id":1,"name":"Small","presentation":"Small","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":24,"name":"Whitelines
+        2","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-2","option_values":[{"option_value":{"id":2,"name":"Medium","presentation":"Medium","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":25,"name":"Whitelines
+        2","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-2","option_values":[{"option_value":{"id":3,"name":"Large","presentation":"Large","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":26,"name":"Whitelines
+        2","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-2","option_values":[{"option_value":{"id":4,"name":"XL","presentation":"XL","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":27,"name":"Whitelines
+        3","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-3","option_values":[{"option_value":{"id":1,"name":"Small","presentation":"Small","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":28,"name":"Whitelines
+        3","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-3","option_values":[{"option_value":{"id":2,"name":"Medium","presentation":"Medium","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":29,"name":"Whitelines
+        3","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-3","option_values":[{"option_value":{"id":3,"name":"Large","presentation":"Large","option_type_name":"Size","option_type_id":1}}]}},{"variant":{"id":30,"name":"Whitelines
+        3","count_on_hand":0,"sku":"","price":"14.0","weight":null,"height":null,"width":null,"depth":null,"is_master":false,"cost_price":null,"permalink":"whitelines-3","option_values":[{"option_value":{"id":4,"name":"XL","presentation":"XL","option_type_name":"Size","option_type_id":1}}]}}]}'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2012 17:37:16 GMT
+recorded_with: VCR 2.3.0

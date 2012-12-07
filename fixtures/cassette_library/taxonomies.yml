@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/store/api/taxonomies?per_page=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      X-Spree-Token:
+      - b56019f04b61a50553ee323f5ab68c6b435871971e79c987
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      Content-Type:
+      - application/json
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"6d4a78870b076c5a43e1017631e3a2a5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 818109a0d62f745696fad81744dbfd74
+      X-Runtime:
+      - '0.141291'
+      Content-Length:
+      - '522'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
+      Date:
+      - Fri, 07 Dec 2012 17:37:16 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":3,"current_page":1,"pages":1,"taxonomies":[{"taxonomy":{"id":3,"name":"ridebmx","root":{"id":3,"name":"ridebmx","permalink":"ridebmx","position":0,"parent_id":null,"taxonomy_id":3,"taxons":[]}}},{"taxonomy":{"id":1,"name":"rideukbmx","root":{"id":1,"name":"rideukbmx","permalink":"ridebmx","position":0,"parent_id":null,"taxonomy_id":1,"taxons":[]}}},{"taxonomy":{"id":2,"name":"whitelines","root":{"id":2,"name":"whitelines","permalink":"whitelines","position":0,"parent_id":null,"taxonomy_id":2,"taxons":[]}}}]}'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2012 17:37:16 GMT
+recorded_with: VCR 2.3.0

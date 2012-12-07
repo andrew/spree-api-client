@@ -22,6 +22,7 @@ describe Spree::API::Client do
   end
   
   describe 'request' do
+    use_vcr_cassette "request", :record => :new_episodes
     it 'should load stuff from the api' do
       client = Spree::API::Client.new('http://localhost:4000/store/api', 'randomtokenstring')
       response = client.request(:get, 'products')
