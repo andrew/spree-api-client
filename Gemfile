@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'json',   :platforms => [:mri_18, :jruby]
+gem 'json',   :platforms => [:ruby_18]
 
 gemspec
