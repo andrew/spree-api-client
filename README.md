@@ -58,4 +58,4 @@ Tests can be ran with `rake spec`
 
 ## Copyright
 
-Copyright (c) 2012 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/spree-api-client/blob/master/LICENSE) for details.
+Copyright (c) 2013 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/spree-api-client/blob/master/LICENSE) for details.
