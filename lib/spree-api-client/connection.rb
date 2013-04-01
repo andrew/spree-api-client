@@ -8,7 +8,7 @@ module Spree
             :force_urlencoded => false,
             :raw              => false,
             :ssl              => { :verify => false },
-            :url       => 'http://localhost:4000/store/api', #api_endpoint
+            :url              => api_endpoint,
             :path_prefix      => '/api'
           }.merge(options)
 
