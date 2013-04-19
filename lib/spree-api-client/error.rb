@@ -15,7 +15,9 @@ module Spree
               http_error = error.response[:status].to_i
 
               if ERROR_MAP.has_key?(http_error)
-                raise ERROR_MAP[http_error].new(error.response[:body]["error"])
+                raise ERROR_MAP[http_error].new(
+                  message: error.response[:body]["error"],
+                  validation_errors: error.response[:body]["errors"])
               else
                 super
               end
