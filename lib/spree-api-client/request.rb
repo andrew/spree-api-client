@@ -36,7 +36,7 @@ module Spree
         end
 
         def get(path, options = {})
-          request(:get, path, options = {}).body
+          request(:get, path, options).body
         end
 
         def post(path, options={})
