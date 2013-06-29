@@ -19,7 +19,8 @@ module Spree
         end
         
         def set_order_shipping_method(order_number, shipping_method_id, options={})
-          put("orders/#{order_number}", options.merge(:shipping_method_id => shipping_method_id))
+          order_options = (options[:order] || {}).merge(:shipping_method_id => shipping_method_id)
+          put("orders/#{order_number}", options.merge(order: order_options))
         end
         
         def empty_order(order_number, options={})

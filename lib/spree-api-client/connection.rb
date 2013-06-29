@@ -17,6 +17,7 @@ module Spree
 
             builder.use FaradayMiddleware::FollowRedirects
             builder.use FaradayMiddleware::Mashify
+            builder.use Faraday::Response::RaiseError
 
             builder.use FaradayMiddleware::ParseJson, :content_type => /\bjson$/
 
