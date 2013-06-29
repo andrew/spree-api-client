@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'json',   :platforms => [:ruby_18]
+gem 'json', '~> 1.7', :platforms => [:ruby_18, :jruby]
 
 gemspec
