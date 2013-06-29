@@ -1,3 +1,5 @@
+require 'spree-api-client/error'
+
 module Spree
   module API
     class Client
@@ -5,31 +7,36 @@ module Spree
         def request(method, path, options = {})
           token = options.delete(:api_token) || api_token
 
-          response = connection.send(method) do |request|
+          begin
+            response = connection.send(method) do |request|
 
-            request.headers['Accept'] =  options.delete(:accept) || 'application/json'
+              request.headers['Accept'] =  options.delete(:accept) || 'application/json'
 
-            if token
-              request.headers['X-Spree-Token'] = token
+              if token
+                request.headers['X-Spree-Token'] = token
+              end
+
+              case method
+              when :get
+                options.merge(:per_page => per_page)
+                request.url(path, options)
+              when :delete, :head
+                request.url(path, options)
+              when :patch, :post, :put
+                request.path = path
+                request.body = MultiJson.dump(options) unless options.empty?
+              end
             end
 
-            case method
-            when :get
-              options.merge!(:per_page => per_page) if per_page
-              request.url(path, options)
-            when :delete, :head
-              request.url(path, options)
-            when :patch, :post, :put
-              request.path = path
-              request.body = MultiJson.dump(options) unless options.empty?
-            end
+          rescue Faraday::Error::ClientError => error
+            raise Spree::API::Client::Error::ClientError.new(error)
           end
 
           response
         end
-      
+
         def get(path, options = {})
-          request(:get, path, options = {}).body
+          request(:get, path, options).body
         end
 
         def post(path, options={})
