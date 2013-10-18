@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{A rubygem for interacting with the Spree API}
   gem.summary       = %q{A rubygem for interacting with the Spree API}
   gem.homepage      = "https://github.com/andrew/spree-api-client"
+  gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
