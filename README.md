@@ -1,4 +1,4 @@
-# Spree::API::Client
+# [Spree API Client](http://libraries.io/rubygems/spree-api-client)
 
 [![Build Status](https://secure.travis-ci.org/andrew/spree-api-client.png)](https://travis-ci.org/andrew/spree-api-client)
 
